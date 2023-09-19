@@ -1,0 +1,87 @@
+/* Define the global styles */
+body {
+    background-color: #FFFFFF; /* Background color for the entire page */
+    color: #333333; /* Text color for the entire page */
+  }
+  
+  /* Style headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: #333333; /* Heading text color */
+  }
+  
+  /* Style links */
+  a {
+    color: #3498db; /* Link color */
+    text-decoration: none; /* Remove underlines from links */
+  }
+  
+  /* Style links on hover */
+  a:hover {
+    color: #1e6ccf; /* Link color on hover */
+  }
+  
+  /* Style buttons */
+  .button {
+    background-color: #3498db; /* Button background color */
+    color: #FFFFFF; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* Style buttons on hover */
+  .button:hover {
+    background-color: #1e6ccf; /* Button background color on hover */
+  }
+  
+  /* Style input fields and textareas */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    background-color: #FFFFFF; /* Input field background color */
+    color: #333333; /* Input field text color */
+    border: 1px solid #555555; /* Input field border */
+    padding: 10px; /* Input field padding */
+    border-radius: 5px; /* Rounded input field corners */
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    background-color: #3498db; /* Submit button background color */
+    color: #FFFFFF; /* Submit button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Submit button padding */
+    border-radius: 5px; /* Rounded submit button corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* Style the submit button on hover */
+  input[type="submit"]:hover {
+    background-color: #1e6ccf; /* Submit button background color on hover */
+  }
+  
+  /* Style the navigation menu */
+  .nav-menu {
+    background-color: #333333; /* Menu background color */
+    color: #FFFFFF; /* Menu text color */
+  }
+  
+  /* Style menu items */
+  .nav-menu li {
+    padding: 10px; /* Menu item padding */
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #222222; /* Footer background color */
+    color: #FFFFFF; /* Footer text color */
+    padding: 20px; /* Footer padding */
+  }
+  
+  /* Style miscellaneous elements */
+  hr {
+    border-color: #555555; /* Horizontal rule color */
+  }
+  
