@@ -68,7 +68,7 @@ Example:
 
 #### FLEXBOX
 
-- A more efficient way to layout, align and distribute space among items in a container
+- One dimensional layout along main axis: `flex` row or column
 - Directionally agnostic
 
 Example:
@@ -155,11 +155,15 @@ Example:
 
 > A great YouTube video about FLEXBOX: [Learn CSS FLEXBOX in 20 Minutes](https://youtu.be/qqDH0T6K5gY?si=o3zWeCvcnTXlgQfB)<br>
 > The example above is from this video.
+
 <br>
 
 #### Grid
 
--
+- Two dimensional layout with grid `cells` along grid `lines`
+  - a row of the grid `cells` is called a `track`
+  - an `area` consists of multiple grid cells (a square or rectangle)
+- Directionally agnostic
 
 Example:
 
