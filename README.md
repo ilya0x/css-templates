@@ -98,27 +98,56 @@ Example:
         }
 
         .flexbox-item {
-            width: 15%;
+            flex-basis: 15%; /* Starting point of the item's width */
+            display: flex; /* Make items into flexboxes themselves */
+
+            /* Use `justify-content` and 'align-items` here to control layout 
+            of elements inside items when the items are flexboxes themselves */
         }
 
         .item-1 {
-            min-height: 50px;
+            min-height: 600px;
+
+            /* Use `flex-grow` property to control the distribution of the 
+            free space between the items. Providing a number makes it 
+            distributed at that ratio. Grow acts when items do not fill the
+            container. */
+            /* Use `flex-shrink` property to provide a number to use as ratio 
+            at which the items shrink when they fill the container. */
+
+            /* Use `fex` property to set the above ones in one place:
+            `flex: a b c;`
+            where:
+            a is `flex-grow` ratio number,
+            b is `flex-shrink` ratio number,
+            c is `flex-basis` percentage */
+            
+            /* Use `align-self` property on each item to individually align 
+            them along the main axis */
+
+            /* Use `order` to assign specific order to the items. This number 
+            will override their actual place in HTML code */
+            order: 2;
         }
 
         .item-2 {
             min-height: 100px;
+
+            order: 1;
         }
 
         .item-3 {
             min-height: 250px;
+
+            order: 3;
         }
     </style>
 </head>
 <body>
     <div class="flexbox-container">
-        <div class="flexbox-item item-1">1</div>
-        <div class="flexbox-item item-2">2</div>
-        <div class="flexbox-item item-3">3</div>
+        <div class="flexbox-item item-1">Main Content</div>
+        <div class="flexbox-item item-2">Left Aside</div>
+        <div class="flexbox-item item-3">Right Aside</div>
     </div>
 </body>
 </html>
@@ -133,5 +162,21 @@ Example:
 -
 
 Example:
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Example</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+```
 
 <br>

@@ -1,0 +1,37 @@
+/** See Sass templates section for this same example with use of Sass to generate these styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header {
+    text-align: center;
+    padding: 25px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+}
+
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+
+}
