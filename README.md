@@ -14,13 +14,9 @@
 
 ## <img src="./images/template-20.png" alt="template"> Templates
 
-
-
 <br>
 
 ## <img src="./images/vscode-20.png" alt="Flask"> Visual Studio Code Extensions
-
-
 
 <br>
 
@@ -28,20 +24,114 @@
 
 > These notes are updated on regular basis
 
-<!--TODO: Table of Contents -->
+<!--
+TODO: Table of Contents
+-->
 
 <br>
 
 ### Layout Styles
 
+#### Block layout
+
+- For laying out documents
+- Vertically based
+
+Example:
+
+<br>
+
+#### Inline layout
+
+- For laying out text
+- Horizontally based
+
+Example:
+
+<br>
+
+#### Positioned layout
+
+- For explicit positioning
+
+Example:
+
+<br>
+
+#### Table layout
+
+- For laying out 2D tabular data
+
+Example:
+
+<br>
+
 #### FLEXBOX
 
--
--
--
+- A more efficient way to layout, align and distribute space among items in a container
+- Directionally agnostic
+
+Example:
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Example</title>
+    <style>
+        .flexbox-container {
+            display: flex;
+            flex-direction: column; /* Changes the direction of the main axis.
+            Default is `row', which is horizontal. */
+            flex-wrap: wrap; /* Wraps items if they do not fit on same line */
+
+            /* Can use `flex-flow` property to combine `flex-direction` and `flex-wrap`:
+            `flex-flow: column wrap;` */
+
+            /* Use `justify-content` property to align and space-out the items 
+            along the main axis */
+            /* Use `align-items` property to align the items along the cross 
+            axis to each other */
+            /* Use `align-content` property to align the items as a group inside
+            the container */
+        }
+
+        .flexbox-item {
+            width: 15%;
+        }
+
+        .item-1 {
+            min-height: 50px;
+        }
+
+        .item-2 {
+            min-height: 100px;
+        }
+
+        .item-3 {
+            min-height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox-container">
+        <div class="flexbox-item item-1">1</div>
+        <div class="flexbox-item item-2">2</div>
+        <div class="flexbox-item item-3">3</div>
+    </div>
+</body>
+</html>
+```
+
+> A great YouTube video about FLEXBOX: [Learn CSS FLEXBOX in 20 Minutes](https://youtu.be/qqDH0T6K5gY?si=o3zWeCvcnTXlgQfB)<br>
+> The example above is from this video.
+<br>
 
 #### Grid
 
 -
--
--
+
+Example:
+
+<br>
