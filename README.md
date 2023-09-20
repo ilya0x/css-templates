@@ -19,7 +19,8 @@
 <b>[Photo Gallery FLEXBOX](photo-gallery-flexbox/)</b> - includes HTML and
 placeholder images (which are all my photographs).
 
-<b>[Grid and Flex Fun Animation Demo](grid-flex-demo/)</b> - includes HTML and images.
+<b>[Grid and Flex Fun Animation Demo](grid-and-flex-demo/)</b> - includes HTML
+and images.
 
 > Animation without JavaScript 🤓
 
