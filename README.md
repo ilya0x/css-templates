@@ -67,9 +67,27 @@ placeholder images (which are all my photographs).
 #### Block Layout
 
 - For laying out documents
+  - Stacking `<div>` blocks
 - Vertically based
 
 Example:
+
+``` css
+/* Define styles for the individual blocks */
+.block {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Add some spacing between blocks */
+.block + .block {
+    margin-top: 20px;
+}
+```
+
+Then use `<div class="block">`
 
 <br>
 
@@ -81,8 +99,25 @@ Example:
 
 - For laying out text
 - Horizontally based
+  - Displays list items horizontally
 
 Example:
+
+``` css
+.nav {
+  background-color: yellow;
+  list-style-type: none;
+  text-align: center; 
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+```
 
 <br>
 
@@ -93,8 +128,52 @@ Example:
 #### Positioned Layout
 
 - For explicit positioning
+- `fixed` vs `relative` vs `absolute` vs `sticky`
 
 Example:
+
+``` css
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+```
+
+``` css
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+```
+
+``` css
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+```
+
+> Internet Explorer does not support sticky positioning. Safari requires a
+> `-webkit-` prefix (see example below). You must also specify at least one of
+> `top`, `right`, `bottom` or `left` for sticky positioning to work.
+
+``` css
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+```
 
 <br>
 
@@ -107,6 +186,24 @@ Example:
 - For laying out 2D tabular data
 
 Example:
+
+``` css
+/* Keyword values */
+table-layout: auto;
+/* Browsers use an automatic table layout algorithm. The column width is set by the
+widest unbreakable content in the cells. The content will dictate the layout */
+table-layout: fixed;
+/* Sets a fixed table layout algorithm. The table and column widths are set by 
+the widths of table and col or by the width of the first row of cells. Cells in 
+other rows do not affect column widths. If no widths are present on the first 
+row, the column widths are divided equally across the table, regardless of 
+content inside the cells */
+/* Global values */
+table-layout: inherit;
+/* Sets this property to its default value. */
+table-layout: initial;
+/* Inherits this property from its parent element. */
+```
 
 <br>
 
