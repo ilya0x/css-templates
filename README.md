@@ -19,6 +19,10 @@
 <b>[Photo Gallery FLEXBOX](photo-gallery-flexbox/)</b> - includes HTML and
 placeholder images (which are all my photographs).
 
+<b>[Grid and Flex Fun Animation Demo](grid-flex-demo/)</b> - includes HTML and images.
+
+> Animation without JavaScript 🤓
+
 <br>
 
 ## <img src="./images/vscode-20.png" alt="Flask"> Visual Studio Code Extensions
@@ -46,6 +50,7 @@ placeholder images (which are all my photographs).
   - <b>[Table Layout](#table-layout)</b>
   - <b>[FLEXBOX Layout](#flexbox-layout)</b>
   - <b>[Grid Layout](#grid-layout)</b>
+- <b>[Animation](#animation)</b>
 
 <br>
 
@@ -68,12 +73,20 @@ Example:
 
 <br>
 
+[Back to Table of Contents](#table-of-contents)
+
+<br>
+
 #### Inline Layout
 
 - For laying out text
 - Horizontally based
 
 Example:
+
+<br>
+
+[Back to Table of Contents](#table-of-contents)
 
 <br>
 
@@ -85,11 +98,19 @@ Example:
 
 <br>
 
+[Back to Table of Contents](#table-of-contents)
+
+<br>
+
 #### Table Layout
 
 - For laying out 2D tabular data
 
 Example:
+
+<br>
+
+[Back to Table of Contents](#table-of-contents)
 
 <br>
 
@@ -185,6 +206,10 @@ Example:
 
 <br>
 
+[Back to Table of Contents](#table-of-contents)
+
+<br>
+
 #### Grid Layout
 
 - Two dimensional layout with grid `cells` along grid `lines`
@@ -192,7 +217,7 @@ Example:
   - an `area` consists of multiple grid cells (a square or rectangle)
 - Directionally agnostic
 
-> I recommend to use grid layout inside flexbox items.
+> Use <b>Grid Template Areas,</b> individually naming all of your grid areas / items.
 
 Example:
 
@@ -244,6 +269,24 @@ Example:
             the container */
             /* Use `align-content` to vertically align all the cells within
             the container */
+
+            /* IF USING Grid Template Area:
+            Use `grid-template-areas` to lay out the items (with 3 columns):
+            grid-template-areas:
+                "header header header"
+                "nav main ads"
+                "footer footer footer"
+            Use `grid-template-rows` to specify row hights:
+            grid-template-rows: 60px 1fr 60px;
+            Use `grid-template-columns` to specify column widths:
+            grid-template-rows: 20% 1fr 15%;
+            OR
+            Combine it into `grid-template`:
+            grid-template:
+                "header header header" 60px
+                "nav main ads" 1fr
+                "footer footer footer" 60px
+                / 20% 1fr 15%; */
         }
 
         .grid-item {
@@ -253,20 +296,39 @@ Example:
         }
 
         .item-1 {
-            grid-column: 1 / 3;
+            grid-area: header; /* Grid Template Area name */
+
+            grid-column: 1 / 3; /* from line 1 to line 3 */
+
+            /* Use `grid-column-start` and `grid-column-end` to specify the 
+            start line and end line of column span */
+            /* Use `grid-row-start` and `grid-row-end` to specify the start
+            line and end line of row span */
+
+            /* Use `justify-self` and `align-self` to align the item 
+            vertically and horizontally */
+            /* Use `place-self` to combine `justify-self` and `align-self`:
+            place-self: bottom right; */
         }
         .item-2 {
-            grid-area: 1 / 3 / 3 / 4;
-            z-index: 1;
+            grid-area: nav; /* Grid Template Area name */
+
+            z-index: 1; /* Brings item-2 to top, to be layer 1 */
         }
         .item-3 {
-            grid-area: 2 / 1 / span 3 / span 2;
+            grid-area: main; /* Grid Template Area name */
         }
         .item-4 {
-            grid-area: 2 / 2 / span 2 / span 2;
+            grid-area: ads; /* Grid Template Area name */
         }
         .item-5 {
-        
+            grid-area: footer; /* Grid Template Area name */
+        }
+        .item-6 {
+            grid-area: 1 / 3 / 3 / 4;
+        }
+        .item-7 {
+            grid-area: 2 / 1 / span 3 / span 2;
         }
     </style>
 </head>
@@ -291,5 +353,17 @@ Example:
 </body>
 </html>
 ```
+
+<br>
+
+[Back to Table of Contents](#table-of-contents)
+
+<br>
+
+### Animation
+
+<br>
+
+[Back to Table of Contents](#table-of-contents)
 
 <br>
