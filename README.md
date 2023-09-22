@@ -1,5 +1,11 @@
 # <img src="images/css3-30.png" alt="CSS"> CSS
 
+CSS is a programming language used for styling web content, providing control
+over the presentation and layout of HTML documents. It has been gaining adoption
+for styling in other UI frameworks.<br>
+
+<br>
+
 > All CSS files used in Flask and Django frameworks are included in their
 > template folders:
 >
